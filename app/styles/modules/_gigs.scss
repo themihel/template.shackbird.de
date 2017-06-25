@@ -1,0 +1,55 @@
+.gigs {
+
+  &-entry {
+    margin-bottom: 4vh;
+
+    .line {
+      &-highlight {
+        background-color: red;
+        color: #FFFFFF;
+        text-align: center;
+      }
+      &-black {
+        background-color: black;
+        color: #FFFFFF;
+      }
+
+      &-normal {
+        font-size: 1em;
+        height: 25px;
+      }
+
+      &-big {
+        font-size: 3em;
+        line-height: 1em;
+        font-weight: bold;
+        height: 55px;
+      }
+
+      &-image {
+        line-height: 4em;
+        height: 80px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      &-info {
+        &:after {
+          content: " ";
+          clear: both;
+          display: block;
+        }
+
+        &-left {
+          float: left;
+        }
+
+        &-right {
+          float: right;
+        }
+      }
+    }
+  }
+}

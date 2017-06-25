@@ -1,8 +1,13 @@
 .divider {
   height: 20vw;
-  background-color: #BBBBBB;
-  background-image: url("/images/g.jpg");
   background-size: cover;
-
   margin-bottom: 4vh;
+
+  &-band {
+    background-image: url("/images/TrennerBand.jpg");
+  }
+
+  &-gigs {
+    background-image: url("/images/TrennerGigs.jpg");
+  }
 }
