@@ -1,0 +1,16 @@
+.news {
+  margin-bottom: 2vh;
+
+  &-article {
+    color: #FFFFFF;
+    background-color: #181818;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+
+    margin-bottom: 4vh;
+
+    &:hover {
+      background-color: #F44336;
+    }
+  }
+}
