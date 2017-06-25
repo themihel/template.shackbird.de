@@ -3,3 +3,11 @@ node_js:
   - "stable"
 install:
   - npm install
+script:
+  - gulp dist
+deploy:
+  on: master
+  skip_cleanup: true
+  provider: surge
+  project: dist/
+  domain: shack.themihel.me
