@@ -5,10 +5,11 @@
 
 // main
 body {
-@include normalizeBoxSize();
+  @include normalizeBoxSize();
   font-family: $font-family;
   font-weight: $font-weight-regular;
   font-size: $font-size-normal;
   color: $color-primary;
   background-color: #282828;
+  overflow-x: hidden;
 }
