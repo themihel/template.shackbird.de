@@ -2,6 +2,7 @@
   height: 20vw;
   background-size: cover;
   margin-bottom: 4vh;
+  margin-top: 4vh;
 
   &-band {
     background-image: url("/images/TrennerBand.jpg");
@@ -9,5 +10,13 @@
 
   &-gigs {
     background-image: url("/images/TrennerGigs.jpg");
+  }
+
+  &-music {
+    background-image: url("/images/TrennerMusik.jpg");
+  }
+
+  &-end {
+    background-image: url("/images/TrennerSchluss.jpg");
   }
 }

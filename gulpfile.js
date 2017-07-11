@@ -45,7 +45,8 @@ gulp.task('styles', function() {
 // Gulp-Task: scripts
 gulp.task('scripts',function() {
   return gulp.src([
-		'app/scripts/**/*.js'
+		'app/scripts/**/*.js',
+        'app/libs/paraxify/paraxify.js'
 	])
   .pipe(sourcemaps.init())
 	.pipe(concat('app.js'))
@@ -63,7 +64,7 @@ gulp.task('lint', function() {
 	])
   .pipe(eslint())
   .pipe(eslint.format())
-  .pipe(eslint.failAfterError());;
+  .pipe(eslint.failAfterError());
 });
 
 // Gulp-Task: images
