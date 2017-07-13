@@ -1,7 +1,13 @@
 .divider {
-  height: 25vw;
+  height: 40vw;
   margin-bottom: 4vh;
   margin-top: 4vh;
+  background-position: top center;
+
+  @media (min-width: $screen-sm-min) {
+    height: 25vw;
+  }
+
 
   &-band {
     background-image: url("/images/TrennerBand.jpg");
