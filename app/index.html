@@ -117,8 +117,8 @@
         </div>
         <div class="col-xs-9 col-sm-10 col-md-11 line-black">
             <div class="line-normal line-info">
-                <span class="line-info-left">21.12.2017 | 20:00 Uhr</span>
-                <span class="line-info-right">mit Shack Out / Line Out / Fade Out / Plug Out</span>
+                <div class="text-left-sm">21.12.2017 | 20:00 Uhr</div>
+                <div class="text-right-sm">mit Shack Out / Line Out / Fade Out / Plug Out</div>
             </div>
             <div class="line-big">Uff die Frestival</div>
             <div class="line-normal">Zack Zack | Kaiserslautern</div>
@@ -133,8 +133,8 @@
         </div>
         <div class="col-xs-9 col-sm-10 col-md-11 line-black">
             <div class="line-normal line-info">
-                <span class="line-info-left">21.12.2017 | 20:00 Uhr</span>
-                <span class="line-info-right">mit Shack Out / Line Out / Fade Out / Plug Out</span>
+                <div class="text-left-sm">21.12.2017 | 20:00 Uhr</div>
+                <div class="text-right-sm">mit Shack Out / Line Out / Fade Out / Plug Out</div>
             </div>
             <div class="line-big">Uff die Frestival</div>
             <div class="line-normal">Zack Zack | Kaiserslautern</div>
@@ -150,8 +150,8 @@
         </div>
         <div class="col-xs-9 col-sm-10 col-md-11 line-black">
             <div class="line-normal line-info">
-                <span class="line-info-left">21.12.2017 | 20:00 Uhr</span>
-                <span class="line-info-right">mit Shack Out / Line Out / Fade Out / Plug Out</span>
+                <div class="text-left-sm">21.12.2017 | 20:00 Uhr</div>
+                <div class="text-right-sm">mit Shack Out / Line Out / Fade Out / Plug Out</div>
             </div>
             <div class="line-big">Uff die Frestival</div>
             <div class="line-normal">Zack Zack | Kaiserslautern</div>
@@ -166,8 +166,8 @@
         </div>
         <div class="col-xs-9 col-sm-10 col-md-11 line-black">
             <div class="line-normal line-info">
-                <span class="line-info-left">21.12.2017 | 20:00 Uhr</span>
-                <span class="line-info-right">mit Shack Out / Line Out / Fade Out / Plug Out</span>
+                <div class="text-left-sm">21.12.2017 | 20:00 Uhr</div>
+                <siv class="text-right-sm">mit Shack Out / Line Out / Fade Out / Plug Out</siv>
             </div>
             <div class="line-big">Uff die Frestival</div>
             <div class="line-normal">Zack Zack | Kaiserslautern</div>
@@ -204,10 +204,12 @@
 
 <script src="scripts/app.js"></script>
 <script>
-    var myParaxify = paraxify('paraxify', {
-        speed: 0.5,
-        boost: 0.5
-    });
+    if (!('ontouchstart' in window)) {
+        var myParaxify = paraxify('paraxify', {
+            speed: 0.5,
+            boost: 0.5
+        });
+    }
 </script>
 
 </body>

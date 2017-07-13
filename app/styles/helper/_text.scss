@@ -1,0 +1,50 @@
+.text {
+  &-left {
+
+    &-xs {
+      float: left;
+    }
+
+    @media(min-width: $screen-sm-min) {
+      &-sm {
+        float: left;
+      }
+    }
+
+    @media(min-width: $screen-md-min) {
+      &-md {
+        float: left;
+      }
+    }
+
+    @media(min-width: $screen-lg-min) {
+      &-lg {
+        float: left;
+      }
+    }
+  }
+
+  &-right {
+    &-xs {
+      float: right;
+    }
+
+    @media(min-width: $screen-sm-min) {
+      &-sm {
+        float: right;
+      }
+    }
+
+    @media(min-width: $screen-md-min) {
+      &-md {
+        float: right;
+      }
+    }
+
+    @media(min-width: $screen-lg-min) {
+      &-lg {
+        float: right;
+      }
+    }
+  }
+}

@@ -8,6 +8,8 @@
         background-color: red;
         color: #FFFFFF;
         text-align: center;
+
+        padding: 10px 0;
       }
       &-black {
         background-color: black;
@@ -16,7 +18,7 @@
 
       &-normal {
         font-size: 1em;
-        height: 25px;
+        min-height: 25px;
       }
 
       &-big {
@@ -36,20 +38,27 @@
       }
 
       &-info {
+        height: 45px;
+
         &:after {
           content: " ";
           clear: both;
           display: block;
         }
+      }
+    }
 
-        &-left {
-          float: left;
+    @media(min-width: $screen-sm-min) {
+      .line {
+        &-highlight {
+          padding: 0;
         }
 
-        &-right {
-          float: right;
+        &-info {
+          height: 25px;
         }
       }
     }
+
   }
 }
