@@ -3,6 +3,10 @@
   text-align: justify;
 
   .cite {
-    font-size: $font-size-extra-large;
+    font-size: $font-size-extra-large - 10;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: $font-size-extra-large;
+    }
   }
 }
