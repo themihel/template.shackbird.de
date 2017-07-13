@@ -40,7 +40,7 @@ function smoothScroll(eID) {
     var timer = 0;
     if (stopY > startY) {
         for (var i = startY; i < stopY; i += step) {
-            setTimeout('window.scrollTo(0, '+leapY+')', timer * speed);
+            setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
             leapY += step;
             if (leapY > stopY) leapY = stopY;
             timer++;
@@ -48,11 +48,52 @@ function smoothScroll(eID) {
         return;
     }
     for (var j = startY; j > stopY; j -= step) {
-        setTimeout('window.scrollTo(0, '+leapY+')', timer * speed);
+        setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
         leapY -= step;
         if (leapY < stopY) leapY = stopY;
         timer++;
     }
+}
+
+/**
+ * Gigs
+ */
+function getDaysToToday(EndDate) {
+    var StartDate = new Date();
+
+    return (Date.UTC(EndDate.getFullYear(), EndDate.getMonth(), EndDate.getDate()) -
+        Date.UTC(StartDate.getFullYear(), StartDate.getMonth(), StartDate.getDate())) / 86400000;
+}
+
+function getTemplateForGig(days) {
+    var html = '';
+    if (days < 0) {
+        html += '<div class="line-normal">Vor</div>';
+        html += '<div class="line-big">' + Math.abs(days) + '</div>';
+        html += '<div class="line-normal">Tagen</div>';
+    } else if (days === 0) {
+        html += '<div class="line-image"><img src="images/ShackbirdBird.png" alt="Shackbird - Bird Logo"></div>';
+        html += '<div class="line-normal">Heute</div>';
+    } else if (days === 1) {
+        html += '<div class="line-normal">Noch</div>';
+        html += '<div class="line-big">' + days + '</div>';
+        html += '<div class="line-normal">Tag</div>';
+    } else {
+        html += '<div class="line-normal">Noch</div>';
+        html += '<div class="line-big">' + days + '</div>';
+        html += '<div class="line-normal">Tage</div>';
+    }
+
+    return html;
+}
+
+var gigEntries = document.querySelectorAll('.gigs-entry');
+
+for (var i = 0; i < gigEntries.length; i++) {
+    var entry = gigEntries[i];
+    var date = entry.dataset.date;
+    var daysBetween = getDaysToToday(new Date(date));
+    entry.childNodes[1].innerHTML = getTemplateForGig(daysBetween);
 }
 
 /**
@@ -64,4 +105,3 @@ if (!('ontouchstart' in window)) {
         boost: 0.5
     });
 }
-
