@@ -1,7 +1,9 @@
 .gigs {
 
   &-entry {
-    margin-bottom: 4vh;
+    &:not(:last-child) {
+      margin-bottom: 4vh;
+    }
 
     .line {
       &-highlight {
