@@ -1,4 +1,8 @@
 {
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "parserOptions": {
     "ecmaVersion": 6
   },
@@ -9,6 +13,7 @@
     "no-console": 0
   },
   "globals": {
-    "console": true
+    "console": true,
+    "paraxify": true
   }
 }

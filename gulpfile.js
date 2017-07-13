@@ -45,8 +45,8 @@ gulp.task('styles', function() {
 // Gulp-Task: scripts
 gulp.task('scripts',function() {
   return gulp.src([
-		'app/scripts/**/*.js',
-        'app/libs/paraxify/paraxify.js'
+     'app/libs/paraxify/paraxify.js',
+     'app/scripts/**/*.js'
 	])
   .pipe(sourcemaps.init())
 	.pipe(concat('app.js'))

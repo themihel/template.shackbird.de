@@ -27,15 +27,15 @@
     </div>
     <nav>
         <ul>
-            <li><a href="#">NWS</a></li>
-            <li><a href="#">GGS</a></li>
-            <li><a href="#">BND</a></li>
-            <li><a href="#">MSK</a></li>
+            <li><a href="#news" onclick="smoothScroll('news')">NWS</a></li>
+            <li><a href="#gigs" onclick="smoothScroll('gigs')">GGS</a></li>
+            <li><a href="#band" onclick="smoothScroll('band')">BND</a></li>
+            <li><a href="#music" onclick="smoothScroll('music')">MSK</a></li>
         </ul>
     </nav>
 </header>
 
-<div class="container news">
+<div class="container news" id="news">
     <div class="row">
 
         <div class="col-xs-12 col-md-4">
@@ -107,7 +107,7 @@
 
 <div class="paraxify container-fluid divider divider-gigs"></div>
 
-<div class="container gigs">
+<div class="container gigs" id="gigs">
 
     <div class="row gigs-entry">
         <div class="col-xs-3 col-sm-2 col-md-1 line-highlight">
@@ -178,7 +178,7 @@
 
 <div class="paraxify container-fluid divider divider-band"></div>
 
-<div class="container">
+<div class="container band" id="band">
     <div class="row">
         <div class="col-xs-12">
             Band
@@ -188,7 +188,7 @@
 
 <div class="paraxify container-fluid divider divider-music"></div>
 
-<div class="container">
+<div class="container music" id="music">
     <div class="row">
         <div class="col-md-6 text-center">
             <iframe src="https://open.spotify.com/embed/album/797KE4IrCeXvH6ignBKsDw" height="715" frameborder="0" allowtransparency="true"></iframe>
@@ -203,14 +203,6 @@
 
 
 <script src="scripts/app.js"></script>
-<script>
-    if (!('ontouchstart' in window)) {
-        var myParaxify = paraxify('paraxify', {
-            speed: 0.5,
-            boost: 0.5
-        });
-    }
-</script>
 
 </body>
 </html>
