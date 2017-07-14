@@ -6,8 +6,17 @@
     background-color: #181818;
     padding: 10px;
     transition: all .3s ease-in-out;
-
     margin-bottom: 4vh;
+
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
     &:hover {
       background-color: #F44336;
