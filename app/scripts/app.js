@@ -93,7 +93,12 @@ for (var i = 0; i < gigEntries.length; i++) {
     var entry = gigEntries[i];
     var date = entry.dataset.date;
     var daysBetween = getDaysToToday(new Date(date));
-    entry.childNodes[1].innerHTML = getTemplateForGig(daysBetween);
+    var childs = entry.childNodes;
+    for (var j = 0; j < childs.length; j++) {
+        if (childs[j].classList == 'col-xs-3 col-sm-2 col-md-1 line-highlight') {
+            childs[j].innerHTML = getTemplateForGig(daysBetween);
+        }
+    }
 }
 
 /**
