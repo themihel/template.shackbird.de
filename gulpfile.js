@@ -28,7 +28,8 @@ var banner = ['/**',
 // Gulp-Task: styles
 gulp.task('styles', function() {
   return gulp.src([
-		'app/styles/app.scss'
+		'app/styles/app.scss',
+        'node_modules/baguettebox.js/dist/baguetteBox.css'
 	])
   .pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
@@ -46,6 +47,7 @@ gulp.task('styles', function() {
 gulp.task('scripts',function() {
   return gulp.src([
      'app/libs/paraxify/paraxify.js',
+     'node_modules/baguettebox.js/dist/baguetteBox.js',
      'app/scripts/**/*.js'
 	])
   .pipe(sourcemaps.init())

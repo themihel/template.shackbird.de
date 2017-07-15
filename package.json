@@ -28,7 +28,7 @@
     "test": "gulp dist && gulp clean"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "baguettebox.js": "^1.8.2",
     "bootstrap-sass": "^3.3.7"
   }
 }

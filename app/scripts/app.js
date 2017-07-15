@@ -110,3 +110,8 @@ if (!('ontouchstart' in window)) {
         boost: 0.5
     });
 }
+
+/**
+ * Baguette box
+ */
+baguetteBox.run('.news-gallery');

@@ -7,9 +7,7 @@
     padding: 10px;
     transition: all .3s ease-in-out;
 
-    &:not(:last-child) {
-      margin-bottom: 4vh;
-    }
+    margin-bottom: 4vh;
     
     p {
       &:first-child {

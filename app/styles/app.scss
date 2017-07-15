@@ -6,7 +6,6 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-
 // import vars
 @import "core/vars";
 
@@ -19,6 +18,7 @@
 // import helper
 @import "helper/float";
 @import "helper/text";
+@import "helper/img";
 
 // import libs
 @import "libs/paraxify";
