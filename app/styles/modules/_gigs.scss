@@ -2,20 +2,20 @@
 
   &-entry {
     &:not(:last-child) {
-      margin-bottom: 4vh;
+      margin-bottom: $margin-default;
     }
 
     .line {
       &-highlight {
         background-color: red;
-        color: #FFFFFF;
+        color: $color-primary-font;
         text-align: center;
 
         padding: 10px 0;
       }
       &-black {
         background-color: black;
-        color: #FFFFFF;
+        color: $color-primary-font;
       }
 
       &-normal {

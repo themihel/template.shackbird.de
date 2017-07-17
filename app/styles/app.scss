@@ -5,6 +5,9 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 
 // import vars
 @import "core/vars";
@@ -18,18 +21,15 @@
 // import helper
 @import "helper/float";
 @import "helper/text";
-@import "helper/img";
+@import "helper/spacer";
 
 // import libs
 @import "libs/paraxify";
 
 // import modules
-@import "modules/helper";
 @import "modules/header";
 @import "modules/naviation";
 @import "modules/news";
 @import "modules/divider";
 @import "modules/gigs";
 @import "modules/band";
-@import "modules/music";
-@import "modules/footer";

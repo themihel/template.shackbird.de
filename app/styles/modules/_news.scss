@@ -1,13 +1,12 @@
 .news {
-  margin-bottom: 2vh;
 
   &-article {
-    color: #FFFFFF;
-    background-color: #181818;
+    color: $color-primary-font;
+    background-color: $color-primary-light;
     padding: 10px;
     transition: all .3s ease-in-out;
 
-    margin-bottom: 4vh;
+    margin-bottom: $margin-default;
     
     p {
       &:first-child {
@@ -20,7 +19,7 @@
     }
 
     &:hover {
-      background-color: #F44336;
+      background-color: $color-highlight;
     }
   }
 }

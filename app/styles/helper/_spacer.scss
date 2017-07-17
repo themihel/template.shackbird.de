@@ -1,0 +1,7 @@
+.spacer {
+  &-bottom, &-top {
+    &-4, &-default {
+      margin-bottom: $margin-default;
+    }
+  }
+}
