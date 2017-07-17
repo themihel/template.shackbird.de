@@ -16,4 +16,8 @@ body {
 
 a {
   color: $color-primary-font;
+
+  &:hover, &:focus, &:active {
+    color: $color-highlight;
+  }
 }

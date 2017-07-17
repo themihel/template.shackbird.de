@@ -18,6 +18,12 @@
       }
     }
 
+    a {
+      &:hover, &:focus, &:active {
+        color: $color-primary-font;
+      }
+    }
+
     &:hover {
       background-color: $color-highlight;
     }
