@@ -2,9 +2,11 @@
 
 **Deprecated:** Moved to dynamic (custom cms) version: themihel/shackbird.de
 
-Template for shackbird.de based on [themihel/frontend-starter-kit](https://github.com/themihel/frontend-starter-kit).
+![Screenshot - Homescreen](https://raw.githubusercontent.com/themihel/template.shackbird.de/master/screenshots/Screenshot-1.png "Startscreen")
 
-Simple template just for prototyping and showing possibilites. 
+Onepage - Template for [shackbird.de](http://shackbird.de) based on [themihel/frontend-starter-kit](https://github.com/themihel/frontend-starter-kit).
+
+Simple template just for prototyping and showing possibilites.
 
 ## Main functionalities
 * Responsive design
@@ -23,3 +25,5 @@ Gulp based build process
 * SCSS - Modules for each item on page
 * Bootstrap (Grid system)
 * Paraxify (Parallax scrolling)
+
+![Screenshot - Gigs](https://raw.githubusercontent.com/themihel/template.shackbird.de/master/screenshots/Screenshot-2.png "Gigs")
